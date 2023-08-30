@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfDanceTitle.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gfDance instance 10000" x="0" y="0" width="365" height="415" frameX="0" frameY="-36" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10001" x="0" y="0" width="365" height="415" frameX="0" frameY="-36" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10002" x="365" y="0" width="365" height="415" frameX="0" frameY="-36" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10003" x="730" y="0" width="365" height="415" frameX="0" frameY="-36" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10004" x="1095" y="0" width="365" height="424" frameX="0" frameY="-28" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10005" x="1460" y="0" width="365" height="458"/>
+	<SubTexture name="gfDance instance 10006" x="0" y="458" width="365" height="452" frameX="0" frameY="-5" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10007" x="365" y="458" width="365" height="448" frameX="0" frameY="-9" frameWidth="365" frameHeight="458"/>
+	<SubTexture name="gfDance instance 10008" x="365" y="458" width="365" height="448" frameX="0" frameY="-9" frameWidth="365" frameHeight="458"/>
+</TextureAtlas>
