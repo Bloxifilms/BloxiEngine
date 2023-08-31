@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="monobloxi.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down instance 10000" x="0" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10001" x="0" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10002" x="0" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10003" x="627" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10004" x="1254" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10005" x="1881" y="0" width="627" height="823"/>
+	<SubTexture name="down instance 10006" x="1881" y="0" width="627" height="823"/>
+	<SubTexture name="idle instance 10000" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="idle instance 10001" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="idle instance 10002" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="idle instance 10003" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="left instance 10000" x="2508" y="0" width="646" height="805"/>
+	<SubTexture name="left instance 10001" x="2508" y="0" width="646" height="805"/>
+	<SubTexture name="left instance 10002" x="3154" y="0" width="646" height="805"/>
+	<SubTexture name="left instance 10003" x="3800" y="0" width="646" height="805"/>
+	<SubTexture name="left instance 10004" x="4446" y="0" width="646" height="805"/>
+	<SubTexture name="left instance 10005" x="5092" y="0" width="646" height="805"/>
+	<SubTexture name="no more instance 10000" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10001" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10002" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10003" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10004" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10005" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10006" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10007" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10008" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10009" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10010" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10011" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10012" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10013" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10014" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10015" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10016" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10017" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10018" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10019" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10020" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10021" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10022" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10023" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10024" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10025" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10026" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10027" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10028" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10029" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10030" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10031" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10032" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10033" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10034" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10035" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10036" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10037" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10038" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10039" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10040" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10041" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10042" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10043" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10044" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10045" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10046" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10047" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10048" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10049" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10050" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10051" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10052" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10053" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10054" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10055" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10056" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10057" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10058" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10059" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10060" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10061" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10062" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10063" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10064" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10065" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10066" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10067" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10068" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10069" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10070" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10071" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10072" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10073" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10074" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10075" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10076" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10077" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10078" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10079" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10080" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10081" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10082" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10083" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10084" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10085" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10086" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10087" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10088" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10089" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10090" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10091" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10092" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10093" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10094" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10095" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10096" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10097" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10098" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10099" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10100" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10101" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10102" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10103" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10104" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10105" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10106" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10107" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10108" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10109" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10110" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10111" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10112" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10113" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10114" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10115" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10116" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10117" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10118" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10119" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10120" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10121" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10122" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10123" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10124" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10125" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10126" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10127" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10128" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10129" x="5738" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10130" x="6365" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10131" x="6365" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10132" x="6992" y="0" width="627" height="804"/>
+	<SubTexture name="no more instance 10133" x="0" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10134" x="627" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10135" x="1254" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10136" x="1254" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10137" x="1881" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10138" x="1881" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10139" x="1881" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10140" x="1881" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10141" x="1881" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10142" x="2508" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10143" x="3135" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10144" x="3762" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10145" x="4389" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10146" x="5016" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10147" x="5643" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10148" x="6270" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10149" x="6270" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10150" x="6270" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10151" x="6270" y="823" width="627" height="804"/>
+	<SubTexture name="no more instance 10152" x="6270" y="823" width="627" height="804"/>
+	<SubTexture name="right instance 10000" x="6897" y="823" width="656" height="804"/>
+	<SubTexture name="right instance 10001" x="6897" y="823" width="656" height="804"/>
+	<SubTexture name="right instance 10002" x="0" y="1627" width="656" height="804"/>
+	<SubTexture name="right instance 10003" x="656" y="1627" width="656" height="804"/>
+	<SubTexture name="right instance 10004" x="1312" y="1627" width="656" height="804"/>
+	<SubTexture name="right instance 10005" x="1968" y="1627" width="656" height="804"/>
+	<SubTexture name="right instance 10006" x="2624" y="1627" width="656" height="804"/>
+	<SubTexture name="up instance 10000" x="3280" y="1627" width="626" height="847"/>
+	<SubTexture name="up instance 10001" x="3280" y="1627" width="626" height="847"/>
+	<SubTexture name="up instance 10002" x="3906" y="1627" width="626" height="847"/>
+	<SubTexture name="up instance 10003" x="4532" y="1627" width="626" height="847"/>
+	<SubTexture name="up instance 10004" x="4532" y="1627" width="626" height="847"/>
+	<SubTexture name="up instance 10005" x="4532" y="1627" width="626" height="847"/>
+</TextureAtlas>

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				170,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "girlangry left"
+		},
+		{
+			"offsets": [
+				106,
+				-182
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "girlangry down"
+		},
+		{
+			"offsets": [
+				-36,
+				280
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "girlangry up"
+		},
+		{
+			"offsets": [
+				180,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "girlangry right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "girlangry idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/girlangry",
+	"position": [
+		80,
+		70
+	],
+	"healthicon": "girl",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		200,
+		200
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

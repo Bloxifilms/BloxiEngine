@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-140
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "ahhhh",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				30,
+				-90
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "FLIPPY IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-101,
+				-116
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "FLIPPY RIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				43,
+				-143
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "FLIPPY LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				-140
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "FLIPPY DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-70
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "FLIPPY UP",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/furry",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "man",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		5,
+		210
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

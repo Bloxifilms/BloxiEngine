@@ -1,0 +1,11 @@
+{
+	"idle_anim": "idle",
+	"image": "bloxinew",
+	"position": [
+		424,
+		183
+	],
+	"flipX": true,
+	"scale": 0.55,
+	"confirm_anim": "idle"
+}

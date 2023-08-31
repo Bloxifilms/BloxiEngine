@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "ahhhh"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "FLIPPY IDLE"
+		},
+		{
+			"offsets": [
+				-101,
+				-116
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "FLIPPY RIGHT"
+		},
+		{
+			"offsets": [
+				43,
+				-143
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "FLIPPY LEFT"
+		},
+		{
+			"offsets": [
+				-70,
+				-140
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "FLIPPY DOWN"
+		},
+		{
+			"offsets": [
+				-40,
+				-70
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "FLIPPY UP"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/blox",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "man",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		5,
+		210
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

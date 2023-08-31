@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="kraftii.png">
+<SubTexture name="kraftii idle0000" x="1718" y="0" width="460" height="1115" frameX="-445" frameY="-88" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii idle0001" x="2178" y="0" width="455" height="1114" frameX="-451" frameY="-89" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii idle0002" x="1634" y="1267" width="442" height="1085" frameX="-493" frameY="-118" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii idle0003" x="2178" y="0" width="455" height="1114" frameX="-451" frameY="-89" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii idle0004" x="1718" y="0" width="460" height="1115" frameX="-445" frameY="-88" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii idle0005" x="1718" y="0" width="460" height="1115" frameX="-445" frameY="-88" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii down0000" x="0" y="1267" width="487" height="1099" frameX="-475" frameY="-104" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii down0001" x="2633" y="0" width="499" height="1083" frameX="-475" frameY="-120" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii left0000" x="487" y="1267" width="503" height="1095" frameX="-369" frameY="-101" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii left0001" x="2076" y="1267" width="505" height="1085" frameX="-335" frameY="-112" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii up0000" x="0" y="0" width="549" height="1267" frameX="-445" frameY="-7" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii up0001" x="549" y="0" width="549" height="1224" frameX="-445" frameY="-50" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii right0000" x="1098" y="0" width="620" height="1117" frameX="-502" frameY="-87" frameWidth="1280" frameHeight="1280" />
+<SubTexture name="kraftii right0001" x="990" y="1267" width="644" height="1095" frameX="-503" frameY="-109" frameWidth="1280" frameHeight="1280" />
+</TextureAtlas>

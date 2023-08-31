@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				179,
+				-175
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "angryman left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				100,
+				-130
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "angryman down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				160
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "angryman up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				360,
+				-83
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "angryman right",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "angryman idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/angryman",
+	"position": [
+		90,
+		50
+	],
+	"healthicon": "mg",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		5,
+		210
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

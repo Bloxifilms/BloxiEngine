@@ -1,0 +1,73 @@
+{
+	"song": {
+		"events": [
+			[
+				22588.2352941176,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bloxiwhack"
+					],
+					[
+						"Change Character",
+						"bf",
+						"girl2"
+					]
+				]
+			],
+			[
+				90352.9411764705,
+				[
+					[
+						"Play Animation",
+						"hey",
+						"BF"
+					],
+					[
+						"Play Animation",
+						"hey",
+						"Dad"
+					],
+					[
+						"Change Character",
+						"GF",
+						"who"
+					]
+				]
+			],
+			[
+				91588.2352941175,
+				[
+					[
+						"Play Animation",
+						"who",
+						"GF"
+					]
+				]
+			],
+			[
+				91764.7058823528,
+				[
+					[
+						"Change Character",
+						"BF",
+						"bff"
+					],
+					[
+						"Change Character",
+						"GF",
+						"angrygirl"
+					],
+					[
+						"Change Character",
+						"Dad",
+						"angryman"
+					]
+				],
+				null,
+				"GF Sing"
+			]
+		]
+	}
+}

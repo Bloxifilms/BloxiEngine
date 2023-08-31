@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				88,
+				2
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "FLIPPY OWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				99,
+				76
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "FLIPPY PP",
+			"indices": []
+		},
+		{
+			"offsets": [
+				50,
+				43
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "FLIPPY IGHT"
+		},
+		{
+			"offsets": [
+				164,
+				41
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "FLIPPY EFT"
+		},
+		{
+			"offsets": [
+				154,
+				63
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "FLIPPY ATTACK"
+		},
+		{
+			"offsets": [
+				78,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "FLIPPY HEY"
+		},
+		{
+			"offsets": [
+				88,
+				39
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "FLIPPY DODGE"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				133,
+				159
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				253
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				132,
+				128
+			],
+			"anim": "singDOWN",
+			"fps": -2147483648,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				182,
+				87
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				124,
+				89
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bloxidemonangry",
+	"position": [
+		-200,
+		220
+	],
+	"healthicon": "deadfard",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		0,
+		0
+	],
+	"camera_position": [
+		30,
+		-90
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

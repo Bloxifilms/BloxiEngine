@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scp.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="no0000" x="80" y="80" width="85" height="56"/>
+	<SubTexture name="whoo0000" x="245" y="80" width="175" height="635" frameX="0" frameY="0" frameWidth="175" frameHeight="1195"/>
+	<SubTexture name="whoo0001" x="245" y="80" width="175" height="635" frameX="0" frameY="0" frameWidth="175" frameHeight="1195"/>
+	<SubTexture name="whoo0002" x="500" y="80" width="175" height="637" frameX="0" frameY="-194" frameWidth="175" frameHeight="1195"/>
+	<SubTexture name="whoo0003" x="755" y="80" width="175" height="636" frameX="0" frameY="-559" frameWidth="175" frameHeight="1195"/>
+	<SubTexture name="whoo0004" x="755" y="80" width="175" height="636" frameX="0" frameY="-559" frameWidth="175" frameHeight="1195"/>
+</TextureAtlas>

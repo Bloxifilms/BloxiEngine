@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="angryman.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angryman down0000" x="80" y="80" width="369" height="534" frameX="0" frameY="-12" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman down0001" x="80" y="80" width="369" height="534" frameX="0" frameY="-12" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman down0002" x="529" y="80" width="362" height="545" frameX="-3" frameY="0" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman down0003" x="529" y="80" width="362" height="545" frameX="-3" frameY="0" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman down0004" x="529" y="80" width="362" height="545" frameX="-3" frameY="0" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman down0005" x="529" y="80" width="362" height="545" frameX="-3" frameY="0" frameWidth="369" frameHeight="546"/>
+	<SubTexture name="angryman idle0000" x="971" y="80" width="227" height="654"/>
+	<SubTexture name="angryman idle0001" x="971" y="80" width="227" height="654"/>
+	<SubTexture name="angryman idle0002" x="1278" y="80" width="226" height="654" frameX="0" frameY="0" frameWidth="227" frameHeight="654"/>
+	<SubTexture name="angryman idle0003" x="1278" y="80" width="226" height="654" frameX="0" frameY="0" frameWidth="227" frameHeight="654"/>
+	<SubTexture name="angryman idle0004" x="1584" y="80" width="226" height="654" frameX="0" frameY="0" frameWidth="227" frameHeight="654"/>
+	<SubTexture name="angryman idle0005" x="1584" y="80" width="226" height="654" frameX="0" frameY="0" frameWidth="227" frameHeight="654"/>
+	<SubTexture name="angryman left0000" x="1890" y="80" width="562" height="432" frameX="0" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman left0001" x="1890" y="80" width="562" height="432" frameX="0" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman left0002" x="2532" y="80" width="568" height="432" frameX="-19" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman left0003" x="2532" y="80" width="568" height="432" frameX="-19" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman left0004" x="2532" y="80" width="568" height="432" frameX="-19" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman left0005" x="2532" y="80" width="568" height="432" frameX="-19" frameY="0" frameWidth="587" frameHeight="432"/>
+	<SubTexture name="angryman right0000" x="3180" y="80" width="640" height="567" frameX="-1" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman right0001" x="3180" y="80" width="640" height="567" frameX="-1" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman right0002" x="80" y="814" width="626" height="567" frameX="0" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman right0003" x="80" y="814" width="626" height="567" frameX="0" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman right0004" x="80" y="814" width="626" height="567" frameX="0" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman right0005" x="80" y="814" width="626" height="567" frameX="0" frameY="0" frameWidth="641" frameHeight="567"/>
+	<SubTexture name="angryman up0000" x="786" y="814" width="323" height="767" frameX="-5" frameY="0" frameWidth="333" frameHeight="767"/>
+	<SubTexture name="angryman up0001" x="786" y="814" width="323" height="767" frameX="-5" frameY="0" frameWidth="333" frameHeight="767"/>
+	<SubTexture name="angryman up0002" x="1189" y="814" width="333" height="748" frameX="0" frameY="-19" frameWidth="333" frameHeight="767"/>
+	<SubTexture name="angryman up0003" x="1189" y="814" width="333" height="748" frameX="0" frameY="-19" frameWidth="333" frameHeight="767"/>
+	<SubTexture name="angryman up0004" x="1189" y="814" width="333" height="748" frameX="0" frameY="-19" frameWidth="333" frameHeight="767"/>
+	<SubTexture name="angryman up0005" x="1189" y="814" width="333" height="748" frameX="0" frameY="-19" frameWidth="333" frameHeight="767"/>
+</TextureAtlas>

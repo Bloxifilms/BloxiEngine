@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				90,
+				-190
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "ahh",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				420,
+				300
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "kraftii idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				420,
+				300
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "kraftii down",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				411,
+				300
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "kraftii right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				420,
+				301
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "kraftii left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				436,
+				343
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "kraftii up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/kraftii",
+	"position": [
+		140,
+		70
+	],
+	"healthicon": "girl",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		200,
+		200
+	],
+	"sing_duration": 6.1,
+	"scale": 0.5
+}

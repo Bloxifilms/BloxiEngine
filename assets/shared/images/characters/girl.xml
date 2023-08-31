@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="girl.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ahh0000" x="80" y="80" width="435" height="521" frameX="0" frameY="-5" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0001" x="80" y="80" width="435" height="521" frameX="0" frameY="-5" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0002" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0003" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0004" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0005" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0006" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0007" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0008" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0009" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0010" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0011" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0012" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0013" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0014" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0015" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0016" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0017" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0018" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0019" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0020" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0021" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0022" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0023" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0024" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0025" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0026" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0027" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0028" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0029" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0030" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0031" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0032" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0033" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0034" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0035" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0036" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0037" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0038" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0039" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0040" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0041" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0042" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0043" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0044" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0045" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0046" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0047" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0048" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0049" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0050" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0051" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0052" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0053" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0054" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0055" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0056" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="ahh0057" x="595" y="80" width="427" height="526" frameX="-4" frameY="0" frameWidth="435" frameHeight="526"/>
+	<SubTexture name="girl down0000" x="1102" y="80" width="412" height="466" frameX="0" frameY="-11" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl down0001" x="1102" y="80" width="412" height="466" frameX="0" frameY="-11" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl down0002" x="1594" y="80" width="408" height="477" frameX="-1" frameY="0" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl down0003" x="1594" y="80" width="408" height="477" frameX="-1" frameY="0" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl down0004" x="1594" y="80" width="408" height="477" frameX="-1" frameY="0" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl down0005" x="1594" y="80" width="408" height="477" frameX="-1" frameY="0" frameWidth="412" frameHeight="477"/>
+	<SubTexture name="girl idle0000" x="2082" y="80" width="173" height="701"/>
+	<SubTexture name="girl idle0001" x="2082" y="80" width="173" height="701"/>
+	<SubTexture name="girl idle0002" x="2335" y="80" width="173" height="701"/>
+	<SubTexture name="girl idle0003" x="2335" y="80" width="173" height="701"/>
+	<SubTexture name="girl idle0004" x="2588" y="80" width="173" height="701"/>
+	<SubTexture name="girl idle0005" x="2588" y="80" width="173" height="701"/>
+	<SubTexture name="girl left0000" x="2841" y="80" width="432" height="554" frameX="0" frameY="-1" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl left0001" x="2841" y="80" width="432" height="554" frameX="0" frameY="-1" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl left0002" x="3353" y="80" width="426" height="555" frameX="-6" frameY="0" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl left0003" x="3353" y="80" width="426" height="555" frameX="-6" frameY="0" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl left0004" x="3353" y="80" width="426" height="555" frameX="-6" frameY="0" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl left0005" x="3353" y="80" width="426" height="555" frameX="-6" frameY="0" frameWidth="432" frameHeight="555"/>
+	<SubTexture name="girl right0000" x="80" y="861" width="391" height="520" frameX="0" frameY="-3" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl right0001" x="80" y="861" width="391" height="520" frameX="0" frameY="-3" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl right0002" x="551" y="861" width="384" height="523" frameX="0" frameY="0" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl right0003" x="551" y="861" width="384" height="523" frameX="0" frameY="0" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl right0004" x="551" y="861" width="384" height="523" frameX="0" frameY="0" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl right0005" x="551" y="861" width="384" height="523" frameX="0" frameY="0" frameWidth="391" frameHeight="523"/>
+	<SubTexture name="girl up0000" x="1015" y="861" width="265" height="721" frameX="-1" frameY="0" frameWidth="268" frameHeight="721"/>
+	<SubTexture name="girl up0001" x="1015" y="861" width="265" height="721" frameX="-1" frameY="0" frameWidth="268" frameHeight="721"/>
+	<SubTexture name="girl up0002" x="1360" y="861" width="268" height="708" frameX="0" frameY="-13" frameWidth="268" frameHeight="721"/>
+	<SubTexture name="girl up0003" x="1360" y="861" width="268" height="708" frameX="0" frameY="-13" frameWidth="268" frameHeight="721"/>
+	<SubTexture name="girl up0004" x="1708" y="861" width="268" height="708" frameX="0" frameY="-13" frameWidth="268" frameHeight="721"/>
+	<SubTexture name="girl up0005" x="1708" y="861" width="268" height="708" frameX="0" frameY="-13" frameWidth="268" frameHeight="721"/>
+</TextureAtlas>

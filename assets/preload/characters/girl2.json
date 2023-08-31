@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				90,
+				-190
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "ahh",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				451,
+				295
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				400,
+				295
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				425,
+				284
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				470,
+				288
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				425,
+				286
+			],
+			"anim": "singLEFT",
+			"fps": 0,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/krafti",
+	"position": [
+		120,
+		-30
+	],
+	"healthicon": "girl",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		200,
+		200
+	],
+	"sing_duration": 6.1,
+	"scale": 0.6
+}

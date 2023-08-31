@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="girlangry.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="girlangry down0000" x="80" y="80" width="431" height="347" frameX="0" frameY="-7" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry down0001" x="80" y="80" width="431" height="347" frameX="0" frameY="-7" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry down0002" x="591" y="80" width="425" height="354" frameX="-3" frameY="0" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry down0003" x="591" y="80" width="425" height="354" frameX="-3" frameY="0" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry down0004" x="591" y="80" width="425" height="354" frameX="-3" frameY="0" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry down0005" x="591" y="80" width="425" height="354" frameX="-3" frameY="0" frameWidth="431" frameHeight="354"/>
+	<SubTexture name="girlangry idle0000" x="1096" y="80" width="268" height="669"/>
+	<SubTexture name="girlangry idle0001" x="1096" y="80" width="268" height="669"/>
+	<SubTexture name="girlangry idle0002" x="1444" y="80" width="268" height="667" frameX="0" frameY="0" frameWidth="268" frameHeight="669"/>
+	<SubTexture name="girlangry idle0003" x="1444" y="80" width="268" height="667" frameX="0" frameY="0" frameWidth="268" frameHeight="669"/>
+	<SubTexture name="girlangry idle0004" x="1792" y="80" width="266" height="667" frameX="-1" frameY="0" frameWidth="268" frameHeight="669"/>
+	<SubTexture name="girlangry idle0005" x="1792" y="80" width="266" height="667" frameX="-1" frameY="0" frameWidth="268" frameHeight="669"/>
+	<SubTexture name="girlangry left0000" x="2138" y="80" width="461" height="500" frameX="0" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry left0001" x="2138" y="80" width="461" height="500" frameX="0" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry left0002" x="2679" y="80" width="456" height="500" frameX="-10" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry left0003" x="2679" y="80" width="456" height="500" frameX="-10" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry left0004" x="2679" y="80" width="456" height="500" frameX="-10" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry left0005" x="2679" y="80" width="456" height="500" frameX="-10" frameY="0" frameWidth="466" frameHeight="500"/>
+	<SubTexture name="girlangry right0000" x="3215" y="80" width="747" height="639"/>
+	<SubTexture name="girlangry right0001" x="3215" y="80" width="747" height="639"/>
+	<SubTexture name="girlangry right0002" x="80" y="829" width="732" height="639" frameX="0" frameY="0" frameWidth="747" frameHeight="639"/>
+	<SubTexture name="girlangry right0003" x="80" y="829" width="732" height="639" frameX="0" frameY="0" frameWidth="747" frameHeight="639"/>
+	<SubTexture name="girlangry right0004" x="80" y="829" width="732" height="639" frameX="0" frameY="0" frameWidth="747" frameHeight="639"/>
+	<SubTexture name="girlangry right0005" x="80" y="829" width="732" height="639" frameX="0" frameY="0" frameWidth="747" frameHeight="639"/>
+	<SubTexture name="girlangry up0000" x="892" y="829" width="241" height="954" frameX="-9" frameY="0" frameWidth="259" frameHeight="954"/>
+	<SubTexture name="girlangry up0001" x="892" y="829" width="241" height="954" frameX="-9" frameY="0" frameWidth="259" frameHeight="954"/>
+	<SubTexture name="girlangry up0002" x="1213" y="829" width="259" height="913" frameX="0" frameY="-41" frameWidth="259" frameHeight="954"/>
+	<SubTexture name="girlangry up0003" x="1213" y="829" width="259" height="913" frameX="0" frameY="-41" frameWidth="259" frameHeight="954"/>
+	<SubTexture name="girlangry up0004" x="1213" y="829" width="259" height="913" frameX="0" frameY="-41" frameWidth="259" frameHeight="954"/>
+	<SubTexture name="girlangry up0005" x="1213" y="829" width="259" height="913" frameX="0" frameY="-41" frameWidth="259" frameHeight="954"/>
+</TextureAtlas>

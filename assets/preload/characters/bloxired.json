@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "i",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				26
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				72,
+				-14
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "r",
+			"indices": []
+		},
+		{
+			"offsets": [
+				83,
+				-13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				78,
+				-14
+			],
+			"anim": "hey",
+			"fps": 30,
+			"name": "hey",
+			"indices": []
+		},
+		{
+			"offsets": [
+				86,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "missleft"
+		},
+		{
+			"offsets": [
+				70,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				71,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "missdown"
+		},
+		{
+			"offsets": [
+				52,
+				-16
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "missright"
+		},
+		{
+			"offsets": [
+				70,
+				25
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "missup"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/redbloxi",
+	"position": [
+		90,
+		270
+	],
+	"healthicon": "newbloxi",
+	"flip_x": true,
+	"healthbar_colors": [
+		58,
+		58,
+		58
+	],
+	"camera_position": [
+		210,
+		-170
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1.7
+}
