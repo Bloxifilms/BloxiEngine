@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				90,
+				-190
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "ahh"
+		},
+		{
+			"offsets": [
+				451,
+				295
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				400,
+				295
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				425,
+				284
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				470,
+				288
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				425,
+				286
+			],
+			"loop": false,
+			"fps": 0,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/krafti",
+	"position": [
+		120,
+		70
+	],
+	"healthicon": "kraftihell",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		200,
+		200
+	],
+	"sing_duration": 6.1,
+	"scale": 0.6
+}

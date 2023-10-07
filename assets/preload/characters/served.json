@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 25,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				20,
+				-23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				4,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				6,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				6,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 30,
+			"anim": "scream",
+			"loop": false,
+			"name": "hey"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/servedbloxi",
+	"position": [
+		90,
+		230
+	],
+	"healthicon": "bloxi64",
+	"flip_x": true,
+	"healthbar_colors": [
+		1,
+		1,
+		1
+	],
+	"camera_position": [
+		-170,
+		130
+	],
+	"sing_duration": 6.1,
+	"scale": 2.4
+}
