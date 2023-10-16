@@ -37,7 +37,7 @@ jobs:
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
-          haxelib git SScript https://github.com/crowplexus/SScript
+          haxelib install sscript 5.0.0
           haxelib run hmm install
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -64,7 +64,7 @@ jobs:
           haxelib setup C:/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
-          haxelib git SScript https://github.com/crowplexus/SScript
+          haxelib install sscript 5.0.0
           haxelib run hmm install
         shell: cmd
       - name: Create Version Tag
@@ -92,7 +92,7 @@ jobs:
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
-          haxelib git SScript https://github.com/crowplexus/SScript
+          haxelib install sscript 5.0.0
           haxelib run hmm install
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
