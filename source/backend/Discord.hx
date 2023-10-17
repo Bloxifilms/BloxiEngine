@@ -14,7 +14,7 @@ class DiscordClient
 		details: "In the Menus",
 		state: null,
 		largeImageKey: 'icon',
-		largeImageText: "Bloxifilms Psych Engine",
+		largeImageText: "Psych Engine",
 		smallImageKey : null,
 		startTimestamp : null,
 		endTimestamp : null

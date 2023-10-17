@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				179,
-				-175
+				309,
+				-235
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "angryman left",
-			"indices": []
+			"indices": [],
+			"name": "angryman left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				100,
-				-130
+				-10,
+				-120
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "angryman down",
-			"indices": []
+			"indices": [],
+			"name": "angryman down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				160
+				120,
+				100
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "angryman up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "angryman up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				360,
+				110,
 				-83
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "angryman right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "angryman right"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 24,
-			"name": "angryman idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "angryman idle"
 		}
 	],
 	"no_antialiasing": false,
@@ -62,7 +62,7 @@
 		90,
 		50
 	],
-	"healthicon": "mg",
+	"healthicon": "mygod",
 	"flip_x": false,
 	"healthbar_colors": [
 		255,

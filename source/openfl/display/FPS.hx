@@ -12,6 +12,8 @@ import openfl.display._internal.stats.DrawCallContext;
 import openfl.Lib;
 #end
 
+import openfl.utils.Assets;
+
 #if openfl
 import openfl.system.System;
 #end
@@ -29,7 +31,9 @@ class FPS extends TextField
 	/**
 		The current frame rate, expressed using frames-per-second
 	**/
-	public var currentFPS(default, null):Int;
+	public var currentFPS(default, null):Float;
+    public var logicFPStime(default, null):Float;
+    public var DisplayFPS(default, null):Float;
 
 	@:noCompletion private var cacheCount:Int;
 	@:noCompletion private var currentTime:Float;
@@ -45,10 +49,14 @@ class FPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		defaultTextFormat = new TextFormat(Assets.getFont("assets/fonts/montserrat.ttf").fontName, 16, color, false, null, null, LEFT, 0, 0);
 		autoSize = LEFT;
-		multiline = true;
+		
+		multiline = true; //多行文本
+		wordWrap = false; //禁用自动换行
+		
 		text = "FPS: ";
+				
 
 		cacheCount = 0;
 		currentTime = 0;
@@ -62,48 +70,105 @@ class FPS extends TextField
 		});
 		#end
 	}
+	
+	public static var currentColor = 0;    
+	 var skippedFrames = 0;
+	 
+     var logicFPSnum = 0;
+	
+    var ColorArray:Array<Int> = [
+		0xFF9400D3,
+		0xFF4B0082,
+		0xFF0000FF,
+		0xFF00FF00,
+		0xFFFFFF00,
+		0xFFFF7F00,
+		0xFFFF0000
+	                                
+	    ];
 
 	// Event Handlers
 	@:noCompletion
 	private #if !flash override #end function __enterFrame(deltaTime:Float):Void
 	{
-		currentTime += deltaTime;
+	
+	//var elapsed = FlxG.elapsed;    		    		
+		/*currentTime += deltaTime;
 		times.push(currentTime);
 
 		while (times[0] < currentTime - 1000)
 		{
 			times.shift();
 		}
-
-		var currentCount = times.length;
-		currentFPS = Math.round((currentCount + cacheCount) / 2);
-		if (currentFPS > ClientPrefs.data.framerate) currentFPS = ClientPrefs.data.framerate;
-
-		if (currentCount != cacheCount /*&& visible*/)
-		{
-			text = "FPS: " + currentFPS;
-			var memoryMegas:Float = 0;
-			
-			#if openfl
-			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory: " + memoryMegas + " MB";
-			#end
-
-			textColor = 0xFFFFFFFF;
-			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
-			{
-				textColor = 0xFFFF0000;
-			}
-
-			#if (gl_stats && !disable_cffi && (!html5 || !canvas))
-			text += "\ntotalDC: " + Context3DStats.totalDrawCalls();
-			text += "\nstageDC: " + Context3DStats.contextDrawCalls(DrawCallContext.STAGE);
-			text += "\nstage3DDC: " + Context3DStats.contextDrawCalls(DrawCallContext.STAGE3D);
-			#end
-
-			text += "\n";
+		*/
+		
+		if (ClientPrefs.data.rainbowFPS)
+	    {
+	        if (skippedFrames >= 6)
+		    {
+		    	if (currentColor >= ColorArray.length)
+    				currentColor = 0;
+    			textColor = ColorArray[currentColor];
+    			currentColor++;
+    			skippedFrames = 0;
+    		}
+    		else
+    		{
+    			skippedFrames++;	
+    		}
 		}
+		else
+		{
+		textColor = 0xFFFFFFFF;		
+		}
+        
+        
+        
+        logicFPStime += deltaTime;
+        logicFPSnum ++;
+        if (logicFPStime >= 200) //update data for 0.2s
+        {
+        currentFPS = Math.ceil(currentFPS * 0.5 + 1 / (logicFPStime / logicFPSnum / 1000) * 0.5) ;
+        logicFPStime = 0;
+        logicFPSnum = 0;
+        }
 
-		cacheCount = currentCount;
+		
+		if (currentFPS > ClientPrefs.data.framerate) currentFPS = ClientPrefs.data.framerate;
+		
+		
+        if ( DisplayFPS > currentFPS ){
+            if (Math.abs(DisplayFPS - currentFPS) > 10) DisplayFPS = DisplayFPS - 2;
+            else DisplayFPS = DisplayFPS - 1;
+        }
+        else if ( DisplayFPS < currentFPS ){
+            if (Math.abs(DisplayFPS - currentFPS) > 10) DisplayFPS = DisplayFPS + 2;
+            else DisplayFPS = DisplayFPS + 1;
+        }
+            
+        
+        
+	
+		
+			text = "FPS: " + DisplayFPS + "/" + ClientPrefs.data.framerate;
+			var memoryMegas:Float = 0;
+			//memoryMegas = Math.round(actualMem / 1024 / 1024 * 100) / 100;			
+			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
+			text += "\nMEM: " + memoryMegas + " MB";
+						
+            var newmemoryMegas:Float = 0;
+
+			if (memoryMegas > 1000)
+			{
+			newmemoryMegas = Math.ceil( Math.abs( System.totalMemory ) / 10000000 / 1.024)/100;
+			
+				text = "FPS: " + DisplayFPS + "/" + ClientPrefs.data.framerate;
+				text += "\nMEM: " + newmemoryMegas + " GB";            
+			}
+						
+            text += "\nNF V1.1.0\n"  + Math.floor(1 / DisplayFPS * 10000 + 0.5) / 10 + "ms";
+                     
+			text += "\n";
+	
 	}
 }

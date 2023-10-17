@@ -2,6 +2,8 @@ package substates;
 
 import objects.AttachedText;
 import objects.CheckboxThingie;
+import flixel.addons.transition.FlxTransitionableState;
+
 
 class GameplayChangersSubstate extends MusicBeatSubstate
 {
@@ -12,6 +14,8 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private var checkboxGroup:FlxTypedGroup<CheckboxThingie>;
 	private var grpTexts:FlxTypedGroup<AttachedText>;
+	
+	public static var onPlayState:Bool = false;
 
 	function getOptions()
 	{
@@ -135,6 +139,11 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 		changeSelection();
 		reloadCheckboxes();
+		
+		#if android
+		addVirtualPad(FULL, A_B_C);
+		addPadCamera();
+		#end
 	}
 
 	var nextAccept:Int = 5;
@@ -152,9 +161,15 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 
 		if (controls.BACK) {
-			close();
-			ClientPrefs.saveSettings();
+			#if android
+			FlxTransitionableState.skipNextTransOut = true;
+			FlxG.resetState();
+			#else
 			FlxG.sound.play(Paths.sound('cancelMenu'));
+			close();
+			#end
+			ClientPrefs.saveSettings();
+			
 		}
 
 		if(nextAccept <= 0)
@@ -265,7 +280,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 				}
 			}
 
-			if(controls.RESET)
+			if(controls.RESET #if android || MusicBeatSubstate._virtualpad.buttonC.justPressed #end)
 			{
 				for (i in 0...optionsArray.length)
 				{

@@ -2,6 +2,7 @@ package states;
 
 import backend.WeekData;
 import backend.Highscore;
+import backend.AndroidDialogsExtend;
 
 import flixel.input.keyboard.FlxKey;
 import flixel.addons.transition.FlxTransitionableState;
@@ -12,6 +13,7 @@ import flixel.input.gamepad.FlxGamepad;
 import tjson.TJSON as Json;
 
 import openfl.Assets;
+import openfl.Lib;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
 
@@ -45,8 +47,10 @@ class TitleState extends MusicBeatState
 	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
 	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
 
-	public static var initialized:Bool = false;
-
+    public static var initialized:Bool = false;
+	public static var inGame:Bool = false;
+	public static var introfaded:Bool = false;
+	
 	var blackScreen:FlxSprite;
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
@@ -69,15 +73,46 @@ class TitleState extends MusicBeatState
 	#end
 
 	var mustUpdate:Bool = false;
-
+    
+    public static var checkOpenFirst:Bool = false;
+    
 	var titleJSON:TitleData;
 
 	public static var updateVersion:String = '';
+	
+	public static var bpm:Float = 0;
 
 	override public function create():Void
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
+		Lib.application.window.title = " NF - Engine - Title";
+		
+		//https://github.com/beihu235/AndroidDialogs
+		var lang:String = '';
+		#if android
+		if (DeviceLanguage.getLang() == 'zh') 
+		lang = 'NF1.1.0测试版\nb站-北狐丶逐梦制作\n禁止上传到任何资源网站';
+		else
+		lang = 'NF1.1.0 android port test\nmade by NF|beihu';
+		#end
+			
+		if(!checkOpenFirst){
+		
+		FlxTransitionableState.skipNextTransOut = true;
+										
+		checkOpenFirst = true;
+
+		#if android
+		AndroidDialogsExtend.OpenToast(lang,2);
+		#end
+		}
+		
+		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		removeVirtualPad();
+		noCheckPress();
+		#end
 
 		#if LUA_ALLOWED
 		Mods.pushGlobalMods();
@@ -98,17 +133,24 @@ class TitleState extends MusicBeatState
 
 		#if CHECK_FOR_UPDATES
 		if(ClientPrefs.data.checkForUpdates && !closedState) {
-			trace('checking for update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/Bloxifilms/bloxifilmspsychengine/main/gitVersion.txt");
+			//trace('checking for update');
+			var http = new haxe.Http("https://github.com/beihu235/NF-Engine-new/blob/main/gitVersion.txt");
 
 			http.onData = function (data:String)
 			{
 				updateVersion = data.split('\n')[0].trim();
 				var curVersion:String = MainMenuState.psychEngineVersion.trim();
-				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
-				if(updateVersion != curVersion) {
-					trace('versions arent matching!');
-					mustUpdate = true;
+				
+				if(updateVersion != '1.1.0(beta)') {
+				var lang:String = '';
+		                if (DeviceLanguage.getLang() == 'zh') 
+		                lang = '发现新版本! 请前往作者主页了解略详';
+		                else
+		                lang = "find new version! press ok toGo to the author's home page for more details";
+		                AndroidDialogsExtend.OpenToast(lang,2);
+		               // SUtil.applicationAlert('!', 'find new version!');
+		                CoolUtil.browserLoad('https://b23.tv/jvrOG5G');
+		            
 				}
 			}
 
@@ -172,16 +214,18 @@ class TitleState extends MusicBeatState
 			MusicBeatState.switchState(new FlashingState());
 		} else {
 			if (initialized)
-				startIntro();
+				startCutscenesIn();
 			else
 			{
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					startIntro();
+					startCutscenesIn();
 				});
 			}
 		}
 		#end
+		
+		bpm = titleJSON.bpm;
 	}
 
 	var logoBl:FlxSprite;
@@ -189,7 +233,37 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
-
+    var introspr:FlxSprite;
+	
+	function startCutscenesIn()
+	{
+		if (inGame) {
+			startIntro();
+			return;
+		}
+		introspr = new FlxSprite(0, 0).loadGraphic(Paths.image('mainmenu_sprite/titleintro'));
+		introspr.antialiasing = ClientPrefs.data.antialiasing;
+		add(introspr);
+		introspr.setGraphicSize(FlxG.width, FlxG.height);
+		introspr.scrollFactor.set();
+		introspr.updateHitbox();
+		introspr.alpha = 0;
+		var imaTween = FlxTween.tween(introspr, {alpha: 1}, 1, {onComplete: function(twn:FlxTween) {
+			new FlxTimer().start(1, function(tmr:FlxTimer)
+			{
+				startCutscenesOut();
+			});
+		}, ease: FlxEase.linear});
+	}
+	
+	function startCutscenesOut()
+	{
+		var imaTween = FlxTween.tween(introspr, {alpha: 0}, 1, {onComplete: function(twn:FlxTween) {
+			introfaded = true;
+			inGame = true;
+			startIntro();
+		}, ease: FlxEase.linear});
+	}
 	function startIntro()
 	{
 		if (!initialized)
@@ -221,6 +295,7 @@ class TitleState extends MusicBeatState
 
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
 		logoBl.animation.play('bump');
+		logoBl.scale.set(0.5, 0.5);
 		logoBl.updateHitbox();
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
@@ -339,12 +414,9 @@ class TitleState extends MusicBeatState
 
 	function getIntroTextShit():Array<Array<String>>
 	{
-		#if MODS_ALLOWED
-		var firstArray:Array<String> = Mods.mergeAllTextsNamed('data/introText.txt', Paths.getPreloadPath());
-		#else
 		var fullText:String = Assets.getText(Paths.txt('introText'));
+
 		var firstArray:Array<String> = fullText.split('\n');
-		#end
 		var swagGoodArray:Array<Array<String>> = [];
 
 		for (i in firstArray)
@@ -584,43 +656,56 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 6:
+					createCoolText(['NF Engine by(cool engine btw)'], 40);
+				// credTextShit.visible = true;
+				case 7:
+					addMoreText('beihu', 40);
+				// credTextShit.text += '\npresent...';
+				// credTextShit.addText();
+				case 8:
+					deleteCoolText();
+				// credTextShit.visible = false;
+				// credTextShit.text = 'In association \nwith';
+				// credTextShit.screenCenter();
+				case 9:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
+					createCoolText(['made', 'by'], -40);
 					#else
 					createCoolText(['In association', 'with'], -40);
 					#end
-				case 8:
-					addMoreText('newgrounds', -40);
+				case 10:
+					addMoreText('the slice team', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
-				case 9:
+				case 11:
 					deleteCoolText();
 					ngSpr.visible = false;
 				// credTextShit.visible = false;
 
-				// credTextShit.text = 'Shoutouts Tom Fulp';
+				// credTextShit.text = 'were the slice team';
 				// credTextShit.screenCenter();
-				case 10:
+				case 12:
 					createCoolText([curWacky[0]]);
 				// credTextShit.visible = true;
-				case 12:
+				case 13:
 					addMoreText(curWacky[1]);
 				// credTextShit.text += '\nlmao';
-				case 13:
+				case 14:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = "Friday";
+				// credTextShit.text = "Slice";
 				// credTextShit.screenCenter();
-				case 14:
-					addMoreText('Friday');
-				// credTextShit.visible = true;
 				case 15:
-					addMoreText('Night');
-				// credTextShit.text += '\nNight';
+					addMoreText('Slice');
+				// credTextShit.visible = true;
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
-
+					addMoreText('Funk');
+				// credTextShit.text += '\nNight';
 				case 17:
+					addMoreText('Saturday');
+				// credTextShit.text += '\nFunkin';
+
+				case 18:
 					skipIntro();
 			}
 		}
@@ -690,7 +775,7 @@ class TitleState extends MusicBeatState
 			{
 				remove(ngSpr);
 				remove(credGroup);
-				FlxG.camera.flash(FlxColor.WHITE, 4);
+				FlxG.camera.flash(FlxColor.WHITE, 2);
 
 				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;
 				if (easteregg == null) easteregg = '';

@@ -4,7 +4,8 @@ package states;
 import sys.FileSystem;
 import sys.io.File;
 #end
-
+import openfl.Lib;
+	
 import objects.AttachedSprite;
 
 class CreditsState extends MusicBeatState
@@ -27,8 +28,10 @@ class CreditsState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("Checkin out some sick creators", null);
 		#end
+
+		Lib.application.window.title = " Bloxi NF - The Credits";
 
 		persistentUpdate = true;
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
@@ -42,12 +45,35 @@ class CreditsState extends MusicBeatState
 		#if MODS_ALLOWED
 		for (mod in Mods.parseList().enabled) pushModCreditsToList(mod);
 		#end
+			
+		var beihuLink:String = 'https://b23.tv/LVj0JVk';
+		var yanqiangLink:String = 'https://b23.tv/FBxHIwT';
+		var Xx_angelkawaii_XLink:String = 'https://space.bilibili.com/1991407094';
 
+		#if android
+		if (DeviceLanguage.getLang() != 'zh') {
+		beihuLink = 'https://youtube.com/@beihu235';
+		Xx_angelkawaii_XLink = 'https://www.youtube.com/@angelkawaii9826';
+		}
+		#end
+								
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Bloxifilms Team'],
-			['Bloxifilms',		'bloxifilms',		'Main Youtuber of Psych Engine Mods',								'https://youtube.com/@bloxifilms',	'FF0000'],
-			['Krafti',				'krafti',			'Main Artist For The Mods And Channel',							'https://youtube.com/@mrkraftii',		'00FF00'],
+		
+		    ['Bloxifilms Team'],
+		    ['bloxifilms',		'bloxi',		'Main Programmer and animator',							'https://youtube.com/@bloxifilms',	'FFC0CB'],
+		    ['Krafti',		'krafti',		'Artist',				'https://youtube.com/@Mr.Kraftii',	'FF6600'],
+
+		    ['NF Engine Team'],
+		    ['beihu',		'beihu',		'Main Programmer\nAndroid Porter',							beihuLink,	'FFC0CB'],
+		    ['qwq',		'qwq',		'Windows build helper',				'https://b23.tv/VIWVK0s',	'FF6600'],
+		    [''],
+		    #if android
+		    ['Psych Engine Android Team'],
+		    ['beihu',		'beihu',		'Main Android Porter\nport owner',							beihuLink,	'FFC0CB'],
+			['yanqiang',     'yanqiang',	    'Android Porter\nBug fix',							yanqiangLink,	'7192FD'],
+			['Xx_angelkawaii_X',     'Xx_angelkawaii_X',	    'Bug fix',							Xx_angelkawaii_XLink,	'FFA2DE'],		    
 			[''],
+			#end
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['Riveren',				'riveren',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/riverennn',		'B42F71'],
@@ -127,6 +153,9 @@ class CreditsState extends MusicBeatState
 		bg.color = CoolUtil.colorFromString(creditsStuff[curSelected][4]);
 		intendedColor = bg.color;
 		changeSelection();
+		#if android
+                addVirtualPad(UP_DOWN, A_B_C);
+                #end
 		super.create();
 	}
 
@@ -144,7 +173,7 @@ class CreditsState extends MusicBeatState
 			if(creditsStuff.length > 1)
 			{
 				var shiftMult:Int = 1;
-				if(FlxG.keys.pressed.SHIFT) shiftMult = 3;
+				if(FlxG.keys.pressed.SHIFT  #if android || MusicBeatState._virtualpad.buttonC.pressed #end) shiftMult = 3;
 
 				var upP = controls.UI_UP_P;
 				var downP = controls.UI_DOWN_P;

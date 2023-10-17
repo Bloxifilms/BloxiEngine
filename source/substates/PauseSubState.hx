@@ -11,13 +11,14 @@ import flixel.util.FlxStringUtil;
 import states.StoryMenuState;
 import states.FreeplayState;
 import options.OptionsState;
+import states.editors.ChartingState;
 
 class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var menuItems:Array<String> = [];
-	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Options', 'Exit to menu'];
+	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty'  #if android, 'Chart Editor' #end, 'Options', 'Game Setting', 'Exit to menu'];
 	var difficultyChoices = [];
 	var curSelected:Int = 0;
 
@@ -140,6 +141,18 @@ class PauseSubState extends MusicBeatSubstate
 
 		regenMenu();
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+		
+		#if android
+		if (PlayState.chartingMode)
+		{
+		        addVirtualPad(FULL, A);
+		}
+		else
+		{
+		        addVirtualPad(FULL, A);
+		} //idk
+		addPadCamera();
+		#end
 	}
 
 	var holdTime:Float = 0;
@@ -266,15 +279,25 @@ class PauseSubState extends MusicBeatSubstate
 						}
 						close();
 					}
+				case 'Chart Editor':
+		            MusicBeatState.switchState(new ChartingState());
+		            PlayState.chartingMode = true;
+		            OptionsState.onPlayState = false;
 				case 'End Song':
 					close();
 					PlayState.instance.notes.clear();
 					PlayState.instance.unspawnNotes = [];
+					OptionsState.onPlayState = false;
 					PlayState.instance.finishSong(true);
 				case 'Toggle Botplay':
-					PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
-					PlayState.changedDifficulty = true;
-					PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
+				    if(!ClientPrefs.data.playOpponent){
+    					PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
+    					PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
+					}else{
+				    	PlayState.instance.cpuControlled_opponent = !PlayState.instance.cpuControlled_opponent;
+				    	PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled_opponent;
+				    }
+					    PlayState.changedDifficulty = true;
 					PlayState.instance.botplayTxt.alpha = 1;
 					PlayState.instance.botplaySine = 0;
 				case 'Options':
@@ -288,6 +311,10 @@ class PauseSubState extends MusicBeatSubstate
 						FlxG.sound.music.time = pauseMusic.time;
 					}
 					OptionsState.onPlayState = true;
+				case 'Game Setting':
+					PlayState.instance.paused = true; // For lua
+					MusicBeatState.switchState(new GameplayChangersSubstate());
+					GameplayChangersSubstate.onPlayState = true;
 				case "Exit to menu":
 					#if desktop DiscordClient.resetClientID(); #end
 					PlayState.deathCounter = 0;
@@ -302,6 +329,7 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.cancelMusicFadeTween();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;
+					OptionsState.onPlayState = false;
 					PlayState.chartingMode = false;
 					FlxG.camera.followLerp = 0;
 			}

@@ -4,6 +4,10 @@ import objects.Note;
 import objects.StrumNote;
 import objects.Alphabet;
 
+
+import sys.FileSystem;
+import sys.io.File;
+
 class VisualsUISubState extends BaseOptionsMenu
 {
 	var noteOptionID:Int = -1;
@@ -25,10 +29,25 @@ class VisualsUISubState extends BaseOptionsMenu
 			note.playAnim('static');
 			notes.add(note);
 		}
+		
+		#if android
+		if (!FileSystem.exists(SUtil.getPath() + 'assets/shared/images/noteSkins') && !FileSystem.exists(SUtil.getPath() + 'assets/shared/images/noteSplashes') && Mods.mergeAllTextsNamed('images/noteSplashes/list.txt', 'shared').length == 0 && Mods.mergeAllTextsNamed('images/noteSkins/list.txt', 'shared').length == 0)//make sure people use 0.71h assets not old shits
+			{				
+		        var lang:String = '';
+		        if (DeviceLanguage.getLang() == 'zh') 
+		        lang = '未检测到noteskin和noteSplashes文件夹\n设置里将不显示这两个选项';
+		        else
+		        lang = 'noteskin and noteSplashes folders not detected, these options will not appear in Settings.';
+                AndroidDialogsExtend.OpenToast(lang,2);
+			}
+		#end
 
-		// options
+		var noteSkins:Array<String> = [];
+		if(Mods.mergeAllTextsNamed('images/noteSkins/list.txt', 'shared').length > 0)
+			noteSkins = Mods.mergeAllTextsNamed('images/noteSkins/list.txt', 'shared');
+		else
+			noteSkins = CoolUtil.coolTextFile(Paths.getPreloadPath('shared/images/noteSkins/list.txt'));
 
-		var noteSkins:Array<String> = Mods.mergeAllTextsNamed('images/noteSkins/list.txt', 'shared');
 		if(noteSkins.length > 0)
 		{
 			if(!noteSkins.contains(ClientPrefs.data.noteSkin))
@@ -44,8 +63,13 @@ class VisualsUISubState extends BaseOptionsMenu
 			option.onChange = onChangeNoteSkin;
 			noteOptionID = optionsArray.length - 1;
 		}
-		
-		var noteSplashes:Array<String> = Mods.mergeAllTextsNamed('images/noteSplashes/list.txt', 'shared');
+
+		var noteSplashes:Array<String> = [];
+		if(Mods.mergeAllTextsNamed('images/noteSplashes/list.txt', 'shared').length > 0)
+			noteSplashes = Mods.mergeAllTextsNamed('images/noteSplashes/list.txt', 'shared');
+		else
+			noteSplashes = CoolUtil.coolTextFile(Paths.getPreloadPath('shared/images/noteSplashes/list.txt'));
+
 		if(noteSplashes.length > 0)
 		{
 			if(!noteSplashes.contains(ClientPrefs.data.splashSkin))
@@ -70,6 +94,42 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		option.decimals = 1;
 		addOption(option);
+		
+		var option:Option = new Option('Disable Note RGB',
+			'Easier to disableNoteRGB for Note.',
+			'disableNoteRGB',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Disable Splash RGB',
+			'Easier to disableNoteRGB for Splash.',
+			'disableSplashRGB',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Custom Fade Type:',
+			"Change Custom Fade Type",
+			'CustomFade',
+			'string',
+			['Move', 'Alpha']);
+		addOption(option);
+		
+		var option:Option = new Option('Custom Fade Sound',
+			'Change Custom Fade Sound Volume.',
+			'CustomFadeSound',
+			'percent');
+		option.scrollSpeed = 1.6;
+		option.minValue = 0.0;
+		option.maxValue = 1;
+		option.changeValue = 0.1;
+		option.decimals = 1;
+		addOption(option);
+		
+		var option:Option = new Option('Custom Fade Text',
+			'Showcase Engine Version Text In Custom Fade.',
+			'CustomFadeText',
+			'bool');
+		addOption(option);
 
 		var option:Option = new Option('Hide HUD',
 			'If checked, hides most HUD elements.',
@@ -83,7 +143,15 @@ class VisualsUISubState extends BaseOptionsMenu
 			'string',
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
-
+		
+		/*
+		var option:Option = new Option('GradientColor TimeBar ',
+			"If chacked timebar will have gradient color\nbut maybe will have bug when you change timebar color again",
+			'gradientTimeBar',
+			'bool');
+		addOption(option);
+        */
+        
 		var option:Option = new Option('Flashing Lights',
 			"Uncheck this if you're sensitive to flashing lights!",
 			'flashing',
@@ -113,14 +181,19 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.decimals = 1;
 		addOption(option);
 		
-		#if !mobile
+		
 		var option:Option = new Option('FPS Counter',
 			'If unchecked, hides FPS Counter.',
 			'showFPS',
 			'bool');
 		addOption(option);
 		option.onChange = onChangeFPSCounter;
-		#end
+		
+		var option:Option = new Option('FPS Rainbow',
+			'If unchecked, FPS not change color',
+			'rainbowFPS',
+			'bool');
+		addOption(option);
 		
 		var option:Option = new Option('Pause Screen Song:',
 			"What song do you prefer for the Pause Screen?",
@@ -149,6 +222,18 @@ class VisualsUISubState extends BaseOptionsMenu
 		var option:Option = new Option('Combo Stacking',
 			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",
 			'comboStacking',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Show Combo Num',
+			"If unchecked, Combo Num won't showcase, saving on System Memory and making them easier to read",
+			'showComboNum',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Show Rating',
+			"If unchecked, Rating won't showcase, saving on System Memory and making them easier to read",
+			'showRating',
 			'bool');
 		addOption(option);
 
@@ -197,7 +282,9 @@ class VisualsUISubState extends BaseOptionsMenu
 	{
 		var skin:String = Note.defaultNoteSkin;
 		var customSkin:String = skin + Note.getNoteSkinPostfix();
-		if(Paths.fileExists('images/$customSkin.png', IMAGE)) skin = customSkin;
+		skin = customSkin;
+		if (Paths.fileExists('images/NOTE_assets.png', IMAGE) && ClientPrefs.data.noteSkin == ClientPrefs.defaultData.noteSkin) //fix for load old mods note assets
+		skin = 'NOTE_assets'; 
 
 		note.texture = skin; //Load texture and anims
 		note.reloadNote();
@@ -210,11 +297,11 @@ class VisualsUISubState extends BaseOptionsMenu
 		super.destroy();
 	}
 
-	#if !mobile
+	
 	function onChangeFPSCounter()
 	{
 		if(Main.fpsVar != null)
 			Main.fpsVar.visible = ClientPrefs.data.showFPS;
 	}
-	#end
+	
 }

@@ -8,20 +8,34 @@ import states.TitleState;
 
 // Add a variable here and it will get automatically saved
 class SaveVariables {
+    
 	public var downScroll:Bool = false;
 	public var middleScroll:Bool = false;
+	public var filpChart:Bool = false;
+	public var fixLNL:Int= 0; //fix long note length
+	public var playOpponent:Bool = false;
+	public var OpponentCodeFix:Bool = false;
+	public var botOpponentFix:Bool = true;
 	public var opponentStrums:Bool = true;
+	
 	public var showFPS:Bool = true;
+	public var rainbowFPS:Bool = false;
 	public var flashing:Bool = true;
+	public var ResultsScreen:Bool = true;
 	public var autoPause:Bool = true;
-	public var antialiasing:Bool = true;
+	public var antialiasing:Bool = true;	
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
+	public var disableNoteRGB:Bool = false;
+	public var disableSplashRGB:Bool = false;
 	public var splashAlpha:Float = 0.6;
 	public var lowQuality:Bool = false;
 	public var shaders:Bool = true;
 	public var cacheOnGPU:Bool = #if !switch false #else true #end; //From Stilic
 	public var framerate:Int = 60;
+	public var CustomFade:String = 'Move';
+	public var CustomFadeSound:Float = 0.5;
+	public var CustomFadeText:Bool = true;
 	public var camZooms:Bool = true;
 	public var hideHud:Bool = false;
 	public var noteOffset:Int = 0;
@@ -30,6 +44,7 @@ class SaveVariables {
 		[0xFF00FFFF, 0xFFFFFFFF, 0xFF1542B7],
 		[0xFF12FA05, 0xFFFFFFFF, 0xFF0A4447],
 		[0xFFF9393F, 0xFFFFFFFF, 0xFF651038]];
+		
 	public var arrowRGBPixel:Array<Array<FlxColor>> = [
 		[0xFFE276FF, 0xFFFFF9FF, 0xFF60008D],
 		[0xFF3DCAFF, 0xFFF4FFFF, 0xFF003060],
@@ -43,8 +58,10 @@ class SaveVariables {
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
 	public var pauseMusic:String = 'Tea Time';
-	public var checkForUpdates:Bool = true;
+	public var checkForUpdates:Bool = false;
 	public var comboStacking:Bool = true;
+	public var showComboNum:Bool = true;
+	public var showRating:Bool = true;
 	public var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -73,8 +90,14 @@ class SaveVariables {
 	public var goodWindow:Int = 90;
 	public var badWindow:Int = 135;
 	public var safeFrames:Float = 10;
-	public var discordRPC:Bool = true;
-
+	public var discordRPC:Bool = true;	
+	
+	public var spaceExtend:Bool = true;
+	public var shiftExtend:Bool = true;
+	public var hitboxLocation:String = 'Bottom';
+	public var hitboxalpha:Float = 0.2;
+	public var VirtualPadAlpha:Float = 0.75;    
+     
 	public function new()
 	{
 		//Why does haxe needs this again?

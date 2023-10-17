@@ -19,7 +19,31 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'middleScroll',
 			'bool');
 		addOption(option);
-
+		
+		var option:Option = new Option('Filp Chart',
+			'If checked, filp chart for playing.',
+			'filpChart',
+			'bool');
+		addOption(option);
+        
+        var option:Option = new Option('Play Opponent',
+			'If checked, playing as opponent\nmay have bug in some mods\n(your score will not be recorded)',
+			'playOpponent',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Opponent Code Fix',
+			'If checked, goodNoteHit and opponentNoteHit\nnot follow playOpponent setting to change\n(if you playing it will return goodNoteHit function)',
+			'OpponentCodeFix',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Opponent Botplay Fix',
+			'If checked, cpuControlled is open for boyfriend\nwhen open playOpponent\n(fix some mode need press somthing)',
+			'botOpponentFix',
+			'bool');
+		addOption(option);
+		
 		var option:Option = new Option('Opponent Notes',
 			'If unchecked, opponent notes get hidden.',
 			'opponentStrums',
@@ -30,6 +54,32 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			"If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.",
 			'ghostTapping',
 			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Long Note Length Reduce',
+			'reduce Long Note length\nFix for some mod engines have been reduced',
+			'fixLNL',
+			'int');
+		option.displayFormat = '%vgrid';
+		option.scrollSpeed = 20;
+		option.minValue = 0;
+		option.maxValue = 2;
+		addOption(option);
+		
+		var option:Option = new Option('Results Screen',
+			"If checked, Open Results Screen at end song",
+			'ResultsScreen',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Rating Offset',
+			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
+			'ratingOffset',
+			'int');
+		option.displayFormat = '%vms';
+		option.scrollSpeed = 20;
+		option.minValue = -30;
+		option.maxValue = 30;
 		addOption(option);
 		
 		var option:Option = new Option('Auto Pause',
