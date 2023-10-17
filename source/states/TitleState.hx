@@ -674,7 +674,7 @@ class TitleState extends MusicBeatState
 					createCoolText(['In association', 'with'], -40);
 					#end
 				case 10:
-					addMoreText('the slice team', -40);
+					addMoreText('bloxifilms', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 11:
@@ -682,7 +682,7 @@ class TitleState extends MusicBeatState
 					ngSpr.visible = false;
 				// credTextShit.visible = false;
 
-				// credTextShit.text = 'were the slice team';
+				// credTextShit.text = 'We are bloxifilms';
 				// credTextShit.screenCenter();
 				case 12:
 					createCoolText([curWacky[0]]);
@@ -693,13 +693,13 @@ class TitleState extends MusicBeatState
 				case 14:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = "Slice";
+				// credTextShit.text = "Bloxi";
 				// credTextShit.screenCenter();
 				case 15:
-					addMoreText('Slice');
+					addMoreText('Films');
 				// credTextShit.visible = true;
 				case 16:
-					addMoreText('Funk');
+					addMoreText('NFified');
 				// credTextShit.text += '\nNight';
 				case 17:
 					addMoreText('Saturday');
