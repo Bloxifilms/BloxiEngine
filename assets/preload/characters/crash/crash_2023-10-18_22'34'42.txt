@@ -1,0 +1,10 @@
+C:\HaxeToolkit\haxe\std/cpp/_std/sys/io/File.hx (line 30)
+objects/Character.hx (line 110)
+states/PlayState.hx (line 478)
+flixel/FlxGame.hx (line 642)
+flixel/FlxGame.hx (line 729)
+flixel/FlxGame.hx (line 682)
+flixel/FlxGame.hx (line 556)
+openfl/events/EventDispatcher.hx (line 402)
+openfl/display/DisplayObject.hx (line 1399)
+[file_contents,assets/characters/bf.json]

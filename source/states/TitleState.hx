@@ -86,7 +86,7 @@ class TitleState extends MusicBeatState
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
-		Lib.application.window.title = " NF - Engine - Title";
+		Lib.application.window.title = " Bloxi NFified - Engine - Title";
 		
 		//https://github.com/beihu235/AndroidDialogs
 		var lang:String = '';
@@ -696,13 +696,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Bloxi";
 				// credTextShit.screenCenter();
 				case 15:
-					addMoreText('Films');
+					addMoreText('Bloxi');
 				// credTextShit.visible = true;
 				case 16:
 					addMoreText('NFified');
 				// credTextShit.text += '\nNight';
 				case 17:
-					addMoreText('Saturday');
+					addMoreText('Engine');
 				// credTextShit.text += '\nFunkin';
 
 				case 18:

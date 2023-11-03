@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				309,
 				-235
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "angryman left"
+			"fps": 24,
+			"name": "angryman left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-10,
 				-120
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "angryman down"
+			"fps": 24,
+			"name": "angryman down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				120,
 				100
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "angryman up"
+			"fps": 24,
+			"name": "angryman up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				110,
 				-83
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "angryman right"
+			"fps": 24,
+			"name": "angryman right",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "angryman idle"
+			"fps": 24,
+			"name": "angryman idle",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -62,12 +62,12 @@
 		90,
 		50
 	],
-	"healthicon": "mygod",
+	"healthicon": "mg",
 	"flip_x": false,
 	"healthbar_colors": [
-		255,
-		255,
-		255
+		140,
+		120,
+		60
 	],
 	"camera_position": [
 		5,

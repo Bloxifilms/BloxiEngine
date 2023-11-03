@@ -1,155 +1,133 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
-				88,
+				70,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "i",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				52
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
 				2
 			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "r",
+			"indices": []
+		},
+		{
+			"offsets": [
+				78,
+				-1
+			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singDOWNmiss",
+			"anim": "singLEFT",
 			"indices": [],
-			"name": "FLIPPY OWN"
-		},
-		{
-			"offsets": [
-				99,
-				76
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "FLIPPY PP"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				50,
-				43
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "FLIPPY IGHT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				164,
-				41
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "FLIPPY EFT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				154,
-				63
-			],
-			"anim": "attack",
-			"fps": 24,
-			"name": "FLIPPY ATTACK",
-			"indices": []
+			"name": "left"
 		},
 		{
 			"loop": false,
 			"offsets": [
 				78,
-				40
+				-14
 			],
 			"anim": "hey",
-			"fps": 24,
-			"name": "FLIPPY HEY",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				88,
-				39
-			],
-			"anim": "dodge",
-			"fps": 24,
-			"name": "FLIPPY DODGE",
+			"fps": 30,
+			"name": "hey",
 			"indices": []
 		},
 		{
 			"offsets": [
-				133,
-				159
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "idle"
-		},
-		{
-			"offsets": [
-				140,
-				253
+				96,
+				-11
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singUP",
+			"anim": "singLEFTmiss",
 			"indices": [],
-			"name": "up"
+			"name": "missleft"
 		},
 		{
 			"offsets": [
-				158,
-				128
+				32,
+				15
 			],
 			"loop": false,
-			"fps": -2147483648,
+			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
 			"name": "down"
 		},
 		{
 			"offsets": [
-				156,
-				87
+				51,
+				-50
 			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": false,
-			"name": "right"
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "missdown"
 		},
 		{
 			"offsets": [
-				155,
-				89
+				32,
+				4
 			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFT",
 			"loop": false,
-			"name": "left"
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "missright"
+		},
+		{
+			"offsets": [
+				70,
+				25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "missup"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bloxinew",
+	"image": "characters/bloxiangry",
 	"position": [
-		-200,
-		220
+		30,
+		130
 	],
-	"healthicon": "fard",
+	"healthicon": "newbloxi",
 	"flip_x": true,
 	"healthbar_colors": [
-		0,
-		0,
-		0
+		58,
+		58,
+		58
 	],
 	"camera_position": [
-		30,
-		-90
+		200,
+		-170
 	],
-	"sing_duration": 4,
-	"scale": 1
+	"sing_duration": 4.00000000000001,
+	"scale": 2.2
 }

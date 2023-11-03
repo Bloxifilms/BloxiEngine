@@ -62,6 +62,7 @@ class CreditsState extends MusicBeatState
 		    ['Bloxifilms Team'],
 		    ['bloxifilms',		'bloxi',		'Main Programmer and animator',							'https://youtube.com/@bloxifilms',	'FFC0CB'],
 		    ['Krafti',		'krafti',		'Artist',				'https://youtube.com/@Mr.Kraftii',	'FF6600'],
+		    ['Dallas57',		'dallas',		'Icons',				'',	'FF6600'],
 
 		    ['NF Engine Team'],
 		    ['beihu',		'beihu',		'Main Programmer\nAndroid Porter',							beihuLink,	'FFC0CB'],

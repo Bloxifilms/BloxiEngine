@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				90,
 				-190
 			],
-			"anim": "hey",
-			"fps": 24,
-			"name": "ahh",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				420,
-				300
-			],
-			"anim": "idle",
-			"fps": 24,
-			"name": "kraftii idle",
-			"indices": []
-		},
-		{
 			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "ahh"
+		},
+		{
 			"offsets": [
 				420,
 				300
 			],
-			"anim": "singDOWN",
+			"loop": true,
 			"fps": 24,
-			"name": "kraftii down",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "kraftii idle"
 		},
 		{
-			"loop": true,
+			"offsets": [
+				420,
+				300
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "kraftii down"
+		},
+		{
 			"offsets": [
 				411,
 				300
 			],
-			"anim": "singLEFT",
+			"loop": true,
 			"fps": 24,
-			"name": "kraftii right",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "kraftii right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				420,
 				301
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "kraftii left",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "kraftii left"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				436,
 				343
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "kraftii up"
+			"fps": 24,
+			"name": "kraftii up",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -73,7 +73,7 @@
 		140,
 		70
 	],
-	"healthicon": "girl",
+	"healthicon": "krafti",
 	"flip_x": false,
 	"healthbar_colors": [
 		255,

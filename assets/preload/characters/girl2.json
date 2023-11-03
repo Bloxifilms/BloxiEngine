@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				90,
 				-190
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "ahh",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "ahh"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				451,
 				295
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				400,
 				295
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				425,
 				284
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				470,
 				288
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				425,
 				286
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 0,
-			"name": "left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
 		}
 	],
 	"no_antialiasing": false,
@@ -73,7 +73,7 @@
 		120,
 		-30
 	],
-	"healthicon": "girl",
+	"healthicon": "krafti",
 	"flip_x": true,
 	"healthbar_colors": [
 		255,
